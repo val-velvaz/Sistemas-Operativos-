@@ -1,0 +1,21 @@
+Arquitectura del proyecto: 
+
+
+"Sistemas Operativos"/
+├── .gitignore
+├── requirements.txt
+├── main.py
+├── models/
+│   ├── __init__.py
+│   ├── process.py           # class Process (Data entity)
+│   ├── batch.py             # class Batch (Manages up to 5 processes)
+│   └── simulator.py         # class SimulatorEngine (Queues, states, clock)
+├── views/
+│   ├── __init__.py
+│   └── main_window.py       # class MainWindow (PySide6 UI, layout, tables)
+├── controllers/
+│   ├── __init__.py
+│   └── sim_controller.py    # class SimulationController (QTimer, event binding)
+└── utils/
+    ├── __init__.py
+    └── data_generator.py    # Functions to generate random TME and operations
